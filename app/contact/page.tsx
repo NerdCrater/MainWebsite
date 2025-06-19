@@ -20,7 +20,7 @@ import MohaliMap from "@/components/ContactUsMap";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#030E4F] text-white">
+    <div className="min-h-screen bg-[#d6d7dc] text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="text-center py-20">
@@ -30,13 +30,13 @@ export default function ContactPage() {
             </Badge>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl text-[#030E4F] md:text-6xl font-bold mb-6">
               Let's Build Something{" "}
               <span className="text-[#F49F1C]">Amazing</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-[#030E4F] max-w-3xl mx-auto">
               Have a project in mind? Get in touch with our team to discuss how
               we can help bring your vision to life.
             </p>
@@ -47,7 +47,7 @@ export default function ContactPage() {
         <section className="py-20">
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <HoverAnimation type="lift">
-              <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6 text-center">
+              <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6 text-center">
                 <MessageSquare className="h-12 w-12 text-[#F49F1C] mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2 text-white">
                   Start a Conversation
@@ -61,7 +61,7 @@ export default function ContactPage() {
               </Card>
             </HoverAnimation>
             <HoverAnimation type="lift">
-              <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6 text-center">
+              <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6 text-center">
                 <Calendar className="h-12 w-12 text-[#F49F1C] mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2 text-white">
                   Schedule a Call
@@ -83,7 +83,7 @@ export default function ContactPage() {
               </Card>
             </HoverAnimation>
             <HoverAnimation type="lift">
-              <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6 text-center">
+              <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6 text-center">
                 <Phone className="h-12 w-12 text-[#F49F1C] mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2 text-white">
                   Call Us Directly
@@ -97,7 +97,7 @@ export default function ContactPage() {
                     variant="outline"
                     className="border-[#F49F1C] text-[#F49F1C] hover:bg-[#F49F1C]/10"
                   >
-                    <span>+91 (7004)-335-954</span>
+                    <span>+91 (9871)-627-742</span>
                   </Button>
                 </a>
               </Card>
@@ -109,7 +109,7 @@ export default function ContactPage() {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <FadeIn direction="left">
             <div>
-              <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+              <h2 className="text-3xl text-[#030E4F]  font-bold mb-8">Get In Touch</h2>
               <ContactForm />
             </div>
           </FadeIn>
@@ -117,7 +117,7 @@ export default function ContactPage() {
           <FadeIn direction="right" delay={0.2}>
             <div className="space-y-6">
               <HoverAnimation type="lift">
-                <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6">
+                <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6">
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-[#F49F1C] shrink-0 mt-1" />
                     <div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
               </HoverAnimation>
 
               <HoverAnimation type="lift">
-                <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6">
+                <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6">
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-[#F49F1C] shrink-0 mt-1" />
                     <div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
               </HoverAnimation>
 
               <HoverAnimation type="lift">
-                <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6">
+                <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6">
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-[#F49F1C] shrink-0 mt-1" />
                     <div>
@@ -187,13 +187,13 @@ export default function ContactPage() {
         {/* FAQ Section */}
         <section className="py-20">
           <FadeIn>
-            <h2 className="text-3xl font-bold mb-12 text-center">
+            <h2 className="text-3xl  text-[#030E4F] font-bold mb-12 text-center">
               Frequently Asked Questions
             </h2>
           </FadeIn>
           <StaggerContainer className="max-w-3xl mx-auto space-y-6">
             <HoverAnimation type="lift">
-              <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6">
+              <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6">
                 <h3 className="font-bold text-lg mb-2 text-white">
                   How long does a typical project take?
                 </h3>
@@ -205,7 +205,7 @@ export default function ContactPage() {
               </Card>
             </HoverAnimation>
             <HoverAnimation type="lift">
-              <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6">
+              <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6">
                 <h3 className="font-bold text-lg mb-2 text-white">
                   Do you provide ongoing support?
                 </h3>
@@ -217,7 +217,7 @@ export default function ContactPage() {
               </Card>
             </HoverAnimation>
             <HoverAnimation type="lift">
-              <Card className="bg-[#020B3F] border-[#F49F1C]/20 p-6">
+              <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6">
                 <h3 className="font-bold text-lg mb-2 text-white">
                   What technologies do you specialize in?
                 </h3>

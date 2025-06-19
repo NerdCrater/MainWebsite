@@ -31,9 +31,9 @@ export default function TeamSection() {
 
     },
     {
-      name: "Michael Rodriguez",
-      title: "Lead Developer",
-      bio: "Michael brings 10+ years of development expertise to our most complex projects.",
+      name: "Utkarsh Sharma",
+      title: "Marketing Head",
+      bio: "",
       image: "/placeholder.svg?height=400&width=400",
         linkedin:"",
       instagram:"",
@@ -44,9 +44,9 @@ export default function TeamSection() {
     },
     
     {
-      name: "Emily Patel",
-      title: "Design Director",
-      bio: "Emily leads our design team with a focus on creating exceptional user experiences.",
+      name: "Shrasti Saxena",
+      title: "Content Writer",
+      bio: "",
       image: "/placeholder.svg?height=400&width=400",
         linkedin:"",
       instagram:"",

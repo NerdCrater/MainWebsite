@@ -24,7 +24,7 @@ const serviceIcons = {
 export default function ServicesPage() {
   const router = useRouter()
   return (
-    <div className="min-h-screen bg-[#030E4F] text-white">
+    <div className="min-h-screen bg-[#d6d7dc] text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="text-center py-20">
@@ -32,12 +32,12 @@ export default function ServicesPage() {
             <Badge className="mb-4 bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold">Our Services</Badge>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="text-5xl text-[#030E4F] md:text-6xl font-bold mb-6">
               Comprehensive <span className="text-[#F49F1C]">IT Solutions</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-[#030E4F]  max-w-3xl mx-auto">
               We offer a comprehensive range of IT solutions to help businesses thrive in the digital age.
             </p>
           </FadeIn>
@@ -50,7 +50,7 @@ export default function ServicesPage() {
               const IconComponent = serviceIcons[service.slug] || Code
               return (
                 <HoverAnimation key={service.id} type="lift">
-                  <Card className="bg-[#020B3F] border-[#F49F1C]/20 hover:border-[#F49F1C]/50 transition-all h-full">
+                  <Card className="bg-[#30396d] border-[#F49F1C]/20 hover:border-[#F49F1C]/50 transition-all h-full">
                     <CardHeader>
                       <div className="w-12 h-12 rounded-full bg-[#F49F1C]/10 flex items-center justify-center mb-4">
                         <IconComponent className="h-6 w-6 text-[#F49F1C]" />
@@ -143,7 +143,7 @@ export default function ServicesPage() {
           </div>
         </section> */}
         
-        <section className="py-20 bg-[#020B3F] rounded-2xl relative">
+        <section className="py-20 bg-[#30396d] rounded-2xl relative">
   <div className="absolute left-4 md:left-1/2 h-full w-0.5 bg-[#F49F1C]/30 -translate-x-1/2"></div>
 
   <div className="text-center mb-16">
@@ -215,8 +215,8 @@ export default function ServicesPage() {
         {/* CTA Section */}
         <section className="py-20 text-center">
           <FadeIn>
-            <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl text-[#030E4F] font-bold mb-6">Ready to Get Started?</h2>
+            <p className="text-xl text-[#030E4F] mb-8 max-w-2xl mx-auto">
               Let's discuss your project and how we can help bring your vision to life.
             </p>
             <HoverAnimation type="scale">
