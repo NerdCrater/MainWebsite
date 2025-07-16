@@ -5,7 +5,20 @@ export const projects = [
     slug: "e-commerce-platform",
     description:
       "A modern e-commerce platform with advanced features and seamless user experience.",
-    image: "/assets/images/projects/ecommerce.jpg",
+      mainImage:"/projects/e-commerce/img1.png",
+    images: [
+      "/projects/e-commerce/img1.png",
+      "/projects/e-commerce/img2.png",
+      "/projects/e-commerce/img3.png",
+      "/projects/e-commerce/img4.png",
+      "/projects/e-commerce/img5.png",
+      "/projects/e-commerce/img6.png",
+      "/projects/e-commerce/img7.png",
+      "/projects/e-commerce/img8.png",
+      "/projects/e-commerce/img9.png",
+      "/projects/e-commerce/img10.png",
+      "/projects/e-commerce/img11.png",
+    ],
     category: "web",
     technologies: ["Next.js", "React", "Node.js", "MongoDB"],
     challenge:
@@ -13,87 +26,159 @@ export const projects = [
     solution:
       "Implemented a microservices architecture with real-time updates using WebSockets, along with an AI-powered recommendation engine that increased average order value by 24%.",
     body: "Our team developed a comprehensive e-commerce solution that handles thousands of products and transactions daily. The platform includes features like real-time inventory tracking, personalized recommendations, and seamless payment processing.\n\nThe client, a mid-sized retailer with ambitious growth plans, needed a solution that could scale with their business while providing a superior shopping experience. We built a custom platform using Next.js for the frontend and a Node.js microservices backend, with MongoDB as the primary database.\n\nKey features included:\n\n- Real-time inventory management across multiple warehouses\n- AI-powered product recommendations based on browsing history and purchase patterns\n- Seamless integration with multiple payment gateways\n- Advanced analytics dashboard for business intelligence\n- Mobile-responsive design with PWA capabilities\n\nThe results were impressive: a 35% increase in conversion rate, 24% higher average order value, and significantly improved customer satisfaction scores. The platform continues to scale with the client's business, which has grown by 150% since implementation.",
+ 
+ overview: [
+  "Our team developed a comprehensive e-commerce solution handling thousands of products and transactions daily, featuring real-time inventory tracking, personalized recommendations, and seamless payment processing.",
+  "The client, a mid-sized retailer with ambitious growth plans, needed a scalable platform that delivered a superior shopping experience. We built a custom platform using Next.js for the frontend and a Node.js microservices backend with MongoDB as the primary database.",
+  "The platform continues to scale with the client's business, which has grown by 150% since implementation, while significantly improving customer satisfaction and operational efficiency."
+],
+keyFeatures: [
+  "Real-time inventory management across multiple warehouses",
+  "AI-powered product recommendations based on browsing and purchase patterns",
+  "Seamless integration with multiple payment gateways",
+  "Advanced analytics dashboard for business intelligence",
+  "Mobile-responsive design with PWA capabilities"
+],
+technicalImplementation: [
+  "We leveraged a modern tech stack including Next.js, Node.js, and MongoDB to build a robust, scalable platform.",
+  "Our agile development process included iterative feedback loops with the client to ensure alignment with evolving business needs and technical scalability."
+],
+results: [
+  "The implementation resulted in a 35% increase in conversion rate, a 24% higher average order value, and significantly improved user satisfaction.",
+  "The system continues to operate efficiently with minimal maintenance, supporting the client's ongoing growth."
+],
+
   },
   {
-    id: 2,
-    title: "Healthcare Mobile App",
-    slug: "healthcare-mobile-app",
-    description:
-      "A comprehensive healthcare app for patients to manage appointments and medical records.",
-    image: "/assets/images/projects/healthcare.jpg",
-    category: "mobile",
-    technologies: ["React Native", "Firebase", "Express", "HIPAA Compliance"],
-    challenge:
-      "Develop a secure, HIPAA-compliant mobile application that allows patients to access medical records, schedule appointments, and communicate with healthcare providers.",
-    solution:
-      "Created a cross-platform React Native app with end-to-end encryption, biometric authentication, and optimized data fetching strategies to ensure both security and performance.",
-    body: "This healthcare application allows patients to schedule appointments, access their medical records, and communicate with healthcare providers securely. We implemented strict security protocols to protect sensitive patient information.\n\nThe client, a network of medical clinics, wanted to improve patient engagement and streamline administrative processes. The app needed to be user-friendly while maintaining the highest security standards for handling protected health information.\n\nKey features included:\n\n- Secure access to medical records and test results\n- Appointment scheduling and reminders\n- Secure messaging with healthcare providers\n- Medication tracking and refill requests\n- Insurance information management\n- Telehealth video consultations\n\nSecurity was paramount, so we implemented multiple layers of protection:\n\n- End-to-end encryption for all data transmission\n- Biometric authentication (fingerprint/face recognition)\n- Automatic session timeouts\n- HIPAA-compliant data storage and handling\n\nThe app has been widely adopted by patients, with over 80% of the client's patient base actively using it. Administrative costs have decreased by 30%, and patient satisfaction scores have improved significantly.",
-  },
-  {
-    id: 3,
-    title: "AI-Powered Analytics Dashboard",
-    slug: "ai-analytics-dashboard",
-    description:
-      "An intelligent analytics dashboard that provides actionable insights from complex data.",
-    image: "/assets/images/projects/analytics.jpg",
-    category: "ai",
-    technologies: ["Python", "TensorFlow", "React", "D3.js", "AWS"],
-    challenge:
-      "Design and implement an advanced analytics platform capable of processing millions of data points in real-time and extracting meaningful insights for business decision-making.",
-    solution:
-      "Developed a scalable architecture using AWS services, custom machine learning models, and interactive visualizations that transformed raw data into clear, actionable business intelligence.",
-    body: "Our AI-powered analytics dashboard transforms complex data into actionable insights. The system processes millions of data points in real-time and uses machine learning to predict trends and anomalies.\n\nThe client, a large financial services company, was struggling to make sense of the vast amounts of data they were collecting. They needed a solution that could not only analyze historical data but also provide predictive insights to inform strategic decisions.\n\nWe built a comprehensive analytics platform with:\n\n- Real-time data processing using AWS Kinesis and Lambda\n- Custom machine learning models for anomaly detection and trend prediction\n- Interactive visualizations using D3.js and React\n- Automated alerts and recommendations based on data patterns\n- Role-based access control for different stakeholders\n\nThe machine learning models were trained on historical data and continuously improved through feedback loops. We implemented several algorithms including:\n\n- Time series forecasting for revenue prediction\n- Clustering for customer segmentation\n- Anomaly detection for fraud prevention\n- Natural language processing for sentiment analysis of customer feedback\n\nThe dashboard has become an essential tool for the client's decision-making process, contributing to a 15% increase in operational efficiency and helping identify new revenue opportunities worth over $2 million annually.",
-  },
-  {
-    id: 4,
-    title: "Financial Services Portal",
-    slug: "financial-services-portal",
-    description:
-      "A secure portal for financial services with advanced transaction capabilities.",
-    image: "/assets/images/projects/finance.jpg",
-    category: "web",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "OAuth 2.0"],
-    challenge:
-      "Build a highly secure yet user-friendly financial portal that handles sensitive transactions while meeting strict regulatory requirements and providing real-time data.",
-    solution:
-      "Implemented a robust architecture with multi-factor authentication, real-time transaction processing, and comprehensive audit logging that exceeded security standards while maintaining excellent performance.",
-    body: "This financial services portal provides users with a secure platform to manage their investments, track transactions, and receive personalized financial advice. Security was our top priority, with multiple layers of protection.\n\nThe client, a financial technology company, needed a platform that would instill confidence in users while handling sensitive financial data and transactions. The solution needed to be both highly secure and user-friendly, with real-time updates and personalized insights.\n\nKey features of the portal include:\n\n- Multi-factor authentication with biometric options\n- Real-time transaction processing and notifications\n- Comprehensive portfolio management and visualization\n- Automated tax reporting and document generation\n- Personalized investment recommendations\n- Secure document storage and sharing\n\nThe technical architecture included:\n\n- Next.js frontend with TypeScript for type safety\n- PostgreSQL for transactional data with robust integrity constraints\n- Redis for caching and real-time updates\n- Comprehensive API security with OAuth 2.0 and JWT\n- End-to-end encryption for all sensitive data\n- Detailed audit logging for compliance and security\n\nThe portal has been well-received by users, with a 92% satisfaction rating. It processes over $50 million in transactions monthly with zero security incidents since launch.",
-  },
-  {
-    id: 5,
-    title: "Restaurant Ordering System",
-    slug: "restaurant-ordering-system",
-    description:
-      "A comprehensive ordering system for restaurants with kitchen management features.",
-    image: "/assets/images/projects/restaurant.jpg",
-    category: "web",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "PWA"],
-    challenge:
-      "Create a seamless, real-time ordering system that connects customers, waitstaff, and kitchen staff while integrating with existing POS and inventory systems.",
-    solution:
-      "Developed a WebSocket-based architecture for instant updates across all user types, with a progressive web app for customers and dedicated interfaces for staff and kitchen management.",
-    body: "Our restaurant ordering system streamlines the entire food service process, from customer orders to kitchen preparation to delivery. The real-time updates ensure efficient service and improved customer satisfaction.\n\nThe client, a growing restaurant chain, was struggling with order accuracy and kitchen efficiency. They needed a modern solution that would improve the customer experience while streamlining operations.\n\nThe system consists of three main components:\n\n1. **Customer-facing ordering app**: A progressive web app that allows customers to browse the menu, place orders, customize items, and pay directly from their devices.\n\n2. **Staff interface**: A tablet-based application for waitstaff to manage tables, take orders, process payments, and communicate with the kitchen.\n\n3. **Kitchen display system**: A robust interface that organizes incoming orders, tracks preparation times, and notifies staff when orders are ready.\n\nAll components communicate in real-time using Socket.io, ensuring that updates are instantly reflected across the system. The solution also integrates with the restaurant's existing POS and inventory management systems.\n\nKey technical features include:\n\n- Offline functionality using PWA capabilities\n- Real-time order tracking and notifications\n- Intelligent order routing to kitchen stations\n- Automated inventory updates based on orders\n- Comprehensive reporting and analytics\n\nSince implementing the system, the restaurant chain has reported a 30% reduction in order errors, 25% faster table turnover, and a significant increase in customer satisfaction scores.",
-  },
-  {
-    id: 6,
-    title: "Travel Companion App",
-    slug: "travel-companion-app",
-    description:
-      "A mobile app that helps travelers plan and navigate their journeys with local insights.",
-    image: "/assets/images/projects/travel.jpg",
-    category: "mobile",
-    technologies: [
-      "Flutter",
-      "Firebase",
-      "Google Maps API",
-      "Machine Learning",
-    ],
-    challenge:
-      "Develop a travel app that works reliably in areas with limited connectivity while providing personalized, location-relevant recommendations and information.",
-    solution:
-      "Built a Flutter-based cross-platform app with sophisticated offline capabilities, efficient data synchronization, and a machine learning recommendation engine that personalizes the travel experience.",
-    body: "This travel companion app helps users discover new destinations, plan itineraries, and navigate unfamiliar places. The app works offline and provides personalized recommendations based on user preferences and behavior.\n\nThe client, a travel technology startup, wanted to create an app that would stand out in the crowded travel app market by offering truly personalized recommendations and robust offline functionality for travelers in remote areas.\n\nKey features of the app include:\n\n- Comprehensive trip planning with customizable itineraries\n- Offline maps and navigation for all destinations\n- Local insights and hidden gems not found in typical guidebooks\n- Personalized recommendations based on user preferences and past behavior\n- Real-time translation and currency conversion\n- Emergency information and assistance contacts for each location\n\nThe technical implementation included:\n\n- Flutter framework for cross-platform development (iOS and Android)\n- Sophisticated caching strategy for offline functionality\n- Efficient data synchronization when connectivity is available\n- Machine learning algorithms for personalized recommendations\n- Integration with multiple APIs (maps, weather, points of interest, etc.)\n- Background location tracking with battery optimization\n\nThe app has gained significant traction, with over 500,000 downloads and a 4.8/5 rating across app stores. Users particularly praise the offline functionality and the quality of the personalized recommendations.",
-  },
+  id: 1,
+  title: "Doctor Time Tracking App",
+  slug: "doctor-time-tracking-app",
+  description: "A cross-platform (iOS and Android) time-tracking mobile app for doctors with a web-based admin panel for real-time monitoring, correction requests, and bi-weekly invoice generation.",
+  mainImage:"/projects/pearmed/img1.png",
+  images: [
+    "/projects/pearmed/img1.png",
+    "/projects/pearmed/img2.png",
+    "/projects/pearmed/img3.png",
+    "/projects/pearmed/img4.png",
+    "/projects/pearmed/img5.png",
+    "/projects/pearmed/img6.png",
+    "/projects/pearmed/img7.png",
+    "/projects/pearmed/img8.png",
+    "/projects/pearmed/img9.png",
+  ],
+  category:[ "web",'mobile'],
+  technologies: ["React Native", "Expo", "Next.js", "Node.js", "MongoDB"],
+  challenge: "Create a seamless, error-reducing system for doctors to track work hours, manage punch-in/out with Charge MD verification, and generate invoices while ensuring real-time admin oversight and scalability across multiple facilities.",
+  solution: "Developed a cross-platform app with facility auto-search, detailed punch-in/out workflows with Charge MD signatures, correction request flows, and bi-weekly automated invoice generation integrated with a web-based admin panel for real-time monitoring and approvals.",
+  overview: [
+    "Built a cross-platform mobile app simplifying doctors' daily time-tracking workflows with facility auto-search, Charge MD verification, and detailed capture of punch-in/out data.",
+    "Developed a web-based admin panel allowing real-time monitoring, facility management, staff management, and bi-weekly invoice approvals by the accounting manager.",
+    "Enabled seamless correction requests and automatic invoice generation with digital signatures to reduce administrative overhead and enhance accuracy."
+  ],
+  keyFeatures: [
+    "Facility auto-search with a comprehensive drop-down for quick selection",
+    "Detailed punch-in/out capture including doctor and Charge MD signatures",
+    "Correction request flow for punch time adjustments with reasons",
+    "Bi-weekly automated invoice generation and digital signing",
+    "Real-time admin panel with facility, doctor, and invoice tracking",
+    "Multiple locations per day support for doctors",
+    "Dedicated sub-admin roles (Charge MD, Accounting Manager) with permission-based access"
+  ],
+  technicalImplementation: [
+    "Built with React Native (Expo) for cross-platform mobile app delivery on iOS and Android.",
+    "Web admin panel developed using Next.js for a performant, server-rendered experience with real-time updates.",
+    "Node.js backend with MongoDB for scalable, secure data handling of punch-in/out records, correction requests, and invoices.",
+    "Implemented secure digital signature capture for doctors and Charge MD approvals during punch workflows and invoice sign-offs.",
+    "Real-time data flows for punch-in/out status, approvals, and reporting dashboards to reduce manual tracking needs."
+  ],
+  results: [
+    "Streamlined doctors' time-tracking processes, reducing manual entry errors and administrative bottlenecks.",
+    "Enabled real-time monitoring and approvals, improving operational efficiency for accounting managers and Charge MDs.",
+    "Reduced the time taken for invoice processing by automating bi-weekly invoice generation with direct doctor sign-offs.",
+    "Enhanced transparency across facilities, helping the client better track services provided and associated financials."
+  ]
+},
+
+  // {
+  //   id: 2,
+  //   title: "Healthcare Mobile App",
+  //   slug: "healthcare-mobile-app",
+  //   description:
+  //     "A comprehensive healthcare app for patients to manage appointments and medical records.",
+  //   image: "/assets/images/projects/healthcare.jpg",
+  //   category: "mobile",
+  //   technologies: ["React Native", "Firebase", "Express", "HIPAA Compliance"],
+  //   challenge:
+  //     "Develop a secure, HIPAA-compliant mobile application that allows patients to access medical records, schedule appointments, and communicate with healthcare providers.",
+  //   solution:
+  //     "Created a cross-platform React Native app with end-to-end encryption, biometric authentication, and optimized data fetching strategies to ensure both security and performance.",
+  //   body: "This healthcare application allows patients to schedule appointments, access their medical records, and communicate with healthcare providers securely. We implemented strict security protocols to protect sensitive patient information.\n\nThe client, a network of medical clinics, wanted to improve patient engagement and streamline administrative processes. The app needed to be user-friendly while maintaining the highest security standards for handling protected health information.\n\nKey features included:\n\n- Secure access to medical records and test results\n- Appointment scheduling and reminders\n- Secure messaging with healthcare providers\n- Medication tracking and refill requests\n- Insurance information management\n- Telehealth video consultations\n\nSecurity was paramount, so we implemented multiple layers of protection:\n\n- End-to-end encryption for all data transmission\n- Biometric authentication (fingerprint/face recognition)\n- Automatic session timeouts\n- HIPAA-compliant data storage and handling\n\nThe app has been widely adopted by patients, with over 80% of the client's patient base actively using it. Administrative costs have decreased by 30%, and patient satisfaction scores have improved significantly.",
+  // },
+  // {
+  //   id: 3,
+  //   title: "AI-Powered Analytics Dashboard",
+  //   slug: "ai-analytics-dashboard",
+  //   description:
+  //     "An intelligent analytics dashboard that provides actionable insights from complex data.",
+  //   image: "/assets/images/projects/analytics.jpg",
+  //   category: "ai",
+  //   technologies: ["Python", "TensorFlow", "React", "D3.js", "AWS"],
+  //   challenge:
+  //     "Design and implement an advanced analytics platform capable of processing millions of data points in real-time and extracting meaningful insights for business decision-making.",
+  //   solution:
+  //     "Developed a scalable architecture using AWS services, custom machine learning models, and interactive visualizations that transformed raw data into clear, actionable business intelligence.",
+  //   body: "Our AI-powered analytics dashboard transforms complex data into actionable insights. The system processes millions of data points in real-time and uses machine learning to predict trends and anomalies.\n\nThe client, a large financial services company, was struggling to make sense of the vast amounts of data they were collecting. They needed a solution that could not only analyze historical data but also provide predictive insights to inform strategic decisions.\n\nWe built a comprehensive analytics platform with:\n\n- Real-time data processing using AWS Kinesis and Lambda\n- Custom machine learning models for anomaly detection and trend prediction\n- Interactive visualizations using D3.js and React\n- Automated alerts and recommendations based on data patterns\n- Role-based access control for different stakeholders\n\nThe machine learning models were trained on historical data and continuously improved through feedback loops. We implemented several algorithms including:\n\n- Time series forecasting for revenue prediction\n- Clustering for customer segmentation\n- Anomaly detection for fraud prevention\n- Natural language processing for sentiment analysis of customer feedback\n\nThe dashboard has become an essential tool for the client's decision-making process, contributing to a 15% increase in operational efficiency and helping identify new revenue opportunities worth over $2 million annually.",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Financial Services Portal",
+  //   slug: "financial-services-portal",
+  //   description:
+  //     "A secure portal for financial services with advanced transaction capabilities.",
+  //   image: "/assets/images/projects/finance.jpg",
+  //   category: "web",
+  //   technologies: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "OAuth 2.0"],
+  //   challenge:
+  //     "Build a highly secure yet user-friendly financial portal that handles sensitive transactions while meeting strict regulatory requirements and providing real-time data.",
+  //   solution:
+  //     "Implemented a robust architecture with multi-factor authentication, real-time transaction processing, and comprehensive audit logging that exceeded security standards while maintaining excellent performance.",
+  //   body: "This financial services portal provides users with a secure platform to manage their investments, track transactions, and receive personalized financial advice. Security was our top priority, with multiple layers of protection.\n\nThe client, a financial technology company, needed a platform that would instill confidence in users while handling sensitive financial data and transactions. The solution needed to be both highly secure and user-friendly, with real-time updates and personalized insights.\n\nKey features of the portal include:\n\n- Multi-factor authentication with biometric options\n- Real-time transaction processing and notifications\n- Comprehensive portfolio management and visualization\n- Automated tax reporting and document generation\n- Personalized investment recommendations\n- Secure document storage and sharing\n\nThe technical architecture included:\n\n- Next.js frontend with TypeScript for type safety\n- PostgreSQL for transactional data with robust integrity constraints\n- Redis for caching and real-time updates\n- Comprehensive API security with OAuth 2.0 and JWT\n- End-to-end encryption for all sensitive data\n- Detailed audit logging for compliance and security\n\nThe portal has been well-received by users, with a 92% satisfaction rating. It processes over $50 million in transactions monthly with zero security incidents since launch.",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Restaurant Ordering System",
+  //   slug: "restaurant-ordering-system",
+  //   description:
+  //     "A comprehensive ordering system for restaurants with kitchen management features.",
+  //   image: "/assets/images/projects/restaurant.jpg",
+  //   category: "web",
+  //   technologies: ["React", "Node.js", "Socket.io", "MongoDB", "PWA"],
+  //   challenge:
+  //     "Create a seamless, real-time ordering system that connects customers, waitstaff, and kitchen staff while integrating with existing POS and inventory systems.",
+  //   solution:
+  //     "Developed a WebSocket-based architecture for instant updates across all user types, with a progressive web app for customers and dedicated interfaces for staff and kitchen management.",
+  //   body: "Our restaurant ordering system streamlines the entire food service process, from customer orders to kitchen preparation to delivery. The real-time updates ensure efficient service and improved customer satisfaction.\n\nThe client, a growing restaurant chain, was struggling with order accuracy and kitchen efficiency. They needed a modern solution that would improve the customer experience while streamlining operations.\n\nThe system consists of three main components:\n\n1. **Customer-facing ordering app**: A progressive web app that allows customers to browse the menu, place orders, customize items, and pay directly from their devices.\n\n2. **Staff interface**: A tablet-based application for waitstaff to manage tables, take orders, process payments, and communicate with the kitchen.\n\n3. **Kitchen display system**: A robust interface that organizes incoming orders, tracks preparation times, and notifies staff when orders are ready.\n\nAll components communicate in real-time using Socket.io, ensuring that updates are instantly reflected across the system. The solution also integrates with the restaurant's existing POS and inventory management systems.\n\nKey technical features include:\n\n- Offline functionality using PWA capabilities\n- Real-time order tracking and notifications\n- Intelligent order routing to kitchen stations\n- Automated inventory updates based on orders\n- Comprehensive reporting and analytics\n\nSince implementing the system, the restaurant chain has reported a 30% reduction in order errors, 25% faster table turnover, and a significant increase in customer satisfaction scores.",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Travel Companion App",
+  //   slug: "travel-companion-app",
+  //   description:
+  //     "A mobile app that helps travelers plan and navigate their journeys with local insights.",
+  //   image: "/assets/images/projects/travel.jpg",
+  //   category: "mobile",
+  //   technologies: [
+  //     "Flutter",
+  //     "Firebase",
+  //     "Google Maps API",
+  //     "Machine Learning",
+  //   ],
+  //   challenge:
+  //     "Develop a travel app that works reliably in areas with limited connectivity while providing personalized, location-relevant recommendations and information.",
+  //   solution:
+  //     "Built a Flutter-based cross-platform app with sophisticated offline capabilities, efficient data synchronization, and a machine learning recommendation engine that personalizes the travel experience.",
+  //   body: "This travel companion app helps users discover new destinations, plan itineraries, and navigate unfamiliar places. The app works offline and provides personalized recommendations based on user preferences and behavior.\n\nThe client, a travel technology startup, wanted to create an app that would stand out in the crowded travel app market by offering truly personalized recommendations and robust offline functionality for travelers in remote areas.\n\nKey features of the app include:\n\n- Comprehensive trip planning with customizable itineraries\n- Offline maps and navigation for all destinations\n- Local insights and hidden gems not found in typical guidebooks\n- Personalized recommendations based on user preferences and past behavior\n- Real-time translation and currency conversion\n- Emergency information and assistance contacts for each location\n\nThe technical implementation included:\n\n- Flutter framework for cross-platform development (iOS and Android)\n- Sophisticated caching strategy for offline functionality\n- Efficient data synchronization when connectivity is available\n- Machine learning algorithms for personalized recommendations\n- Integration with multiple APIs (maps, weather, points of interest, etc.)\n- Background location tracking with battery optimization\n\nThe app has gained significant traction, with over 500,000 downloads and a 4.8/5 rating across app stores. Users particularly praise the offline functionality and the quality of the personalized recommendations.",
+  // },
 ];
 
 export const testimonials = [

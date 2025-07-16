@@ -1,4 +1,4 @@
-"use client";
+
 import { Card } from "@/components/ui/card";
 import {
   MapPin,
@@ -23,7 +23,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#d6d7dc] text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Hero Section */}
-        <section className="text-center py-20">
+        {/* <section className="text-center py-20">
           <FadeIn>
             <Badge className="mb-4 bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold">
               Contact Us
@@ -41,10 +41,10 @@ export default function ContactPage() {
               we can help bring your vision to life.
             </p>
           </FadeIn>
-        </section>
+        </section> */}
 
         {/* Contact Methods */}
-        <section className="py-20">
+        {/* <section className="py-20">
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <HoverAnimation type="lift">
               <Card className="bg-[#30396d] border-[#F49F1C]/20 p-6 text-center">
@@ -103,7 +103,7 @@ export default function ContactPage() {
               </Card>
             </HoverAnimation>
           </StaggerContainer>
-        </section>
+        </section> */}
 
         {/* Main Contact Section */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12">
