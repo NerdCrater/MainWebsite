@@ -39,9 +39,9 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const relatedProjects = projects.filter((p) => p.category === project.category && p.id !== project.id).slice(0, 2)
 
   return (
-    <div className="bg-muted/30 py-12">
+    <div className="bg-[#d6d7dc] py-12">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto bg-background rounded-xl shadow-md overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-[#30396d] rounded-xl shadow-md overflow-hidden">
           <Link href="/portfolio" passHref>
             <Button variant="ghost" className="m-6 group">
               <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
@@ -96,7 +96,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
             </div>
 
             <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-            <p className="text-xl text-muted-foreground mb-8">{project.description}</p>
+            <p className="text-xl text-muted-foreground mb-8 text-white">{project.description}</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <Card className="border-none shadow-md bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/30 dark:to-blue-900/20">
@@ -158,13 +158,13 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
             </div> */}
           <div className="max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed text-muted-foreground">
 
-  <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+  <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-white">
     📝 Project Overview
   </h2>
   {
     project?.overview?.map((overviewItem:any)=>(
 
-  <p>
+  <p className="text-white">
     {overviewItem}
   </p>
     ))
@@ -176,13 +176,13 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
     The platform continues to scale with the client's business, which has grown by 150% since implementation, while significantly improving customer satisfaction and operational efficiency.
   </p> */}
 
-  <h2 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-2">
+  <h2 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-2 text-white">
     🚀 Key Features
   </h2>
   <ul className="list-disc list-inside space-y-1">
     {
       project?.keyFeatures?.map((keyFeatures:any)=>(
-        <li>
+        <li className="text-white">
           {keyFeatures}
         </li>
       ))
@@ -194,25 +194,25 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
     <li>Mobile-responsive design with PWA capabilities</li> */}
   </ul>
 
-  <h2 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-2">
+  <h2 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-2 text-white">
     💻 Technical Implementation
   </h2>
   {
     project?.technicalImplementation?.map((technicalImplementation:any)=>(
 
-  <p>
+  <p className="text-white">
     {technicalImplementation}
   </p>
     ))
   }
 
-  <h2 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-2">
+  <h2 className="text-2xl font-bold mb-4 mt-8 flex items-center gap-2 text-white">
     🏆 Results
   </h2>
   {
     project?.results?.map((results:any)=>(
 
-  <p>
+  <p className="text-white">
     {results}
   </p>
     ))
@@ -222,7 +222,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <Card className="border-none shadow-md">
+              <Card className="border-none shadow-md bg-muted">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Calendar className="h-6 w-6 text-primary" />
@@ -231,7 +231,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
                   <p className="text-muted-foreground">3 months</p>
                 </CardContent>
               </Card>
-              <Card className="border-none shadow-md">
+              <Card className="border-none shadow-md bg-muted">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <CheckCircle2 className="h-6 w-6 text-primary" />
@@ -240,7 +240,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
                   <p className="text-muted-foreground">Completed</p>
                 </CardContent>
               </Card>
-              <Card className="border-none shadow-md">
+              <Card className="border-none shadow-md bg-muted">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <span className="text-xl">🌐</span>
@@ -251,12 +251,16 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
               </Card>
             </div>
 
-            <div className="flex justify-center">
-              <Button size="lg" className="gap-2">
-                <span>View Live Project</span>
-                <ExternalLink className="h-4 w-4" />
-              </Button>
-            </div>
+          <div className="flex justify-center">
+  <Button
+    size="lg"
+    className="gap-2 bg-[#F49F1C] text-white hover:bg-[#E8890B]"
+  >
+    <span>View Live Project</span>
+    <ExternalLink className="h-4 w-4" />
+  </Button>
+</div>
+
           </div>
         </div>
 
