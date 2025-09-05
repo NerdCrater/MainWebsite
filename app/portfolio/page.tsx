@@ -163,12 +163,12 @@ const router =useRouter()
         </section>
 
         {/* Client Logos Section */}
-        <section className="py-20 bg-[#020B3F] rounded-2xl">
+        {/* <section className="py-20 bg-[#020B3F] rounded-2xl">
           <FadeIn>
             <h2 className="text-3xl font-bold mb-8 text-center">Trusted By</h2>
           </FadeIn>
           <ClientLogos />
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-20 text-center">
@@ -178,7 +178,9 @@ const router =useRouter()
               Let's create something amazing together. Contact us to discuss your next project.
             </p>
             <HoverAnimation type="scale">
-              <Button size="lg" className="bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold">
+              <Button size="lg" className="bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold"
+               onClick={() => router.push("/contact")}
+              >
                 Get Started Today
               </Button>
             </HoverAnimation>

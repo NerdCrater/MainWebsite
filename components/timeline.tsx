@@ -1,4 +1,4 @@
-export default function Timeline() {
+export default function   Timeline() {
   const timelineEvents = [
     {
       year: "2025",
@@ -50,7 +50,7 @@ export default function Timeline() {
 
             {/* Content */}
             <div className={`md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"} pl-12 md:pl-0`}>
-              <div className="bg-card p-6 rounded-lg shadow-sm">
+              <div className="bg-[#30396d] p-6 rounded-lg shadow-sm">
                 <div className="text-primary font-bold text-xl mb-2">{event.year}</div>
                 <h3 className="text-xl font-bold mb-2">{event.title}</h3>
                 <p className="text-muted-foreground">{event.description}</p>

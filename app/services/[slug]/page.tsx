@@ -159,9 +159,9 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="bg-muted/30 py-12">
+    <div className="bg-[#d6d7dc] py-12">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto bg-background rounded-xl shadow-md overflow-hidden">
+        <div className="max-w-5xl mx-auto bg-[#30396d] rounded-xl shadow-md overflow-hidden">
           <Link href="/services" passHref>
             <Button variant="ghost" className="m-6 group">
               <ArrowLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />

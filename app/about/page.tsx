@@ -62,63 +62,66 @@ export default function AboutPage() {
           </section>
 
           {/* Vision & Mission */}
-          <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <FadeIn direction="left">
-              <div>
-                <h2 className="text-4xl text-[#030E4F] font-bold mb-6">Our Story</h2>
-                <p className="text-xl mb-6 text-[#030E4F]">
-                  Founded with a vision to bridge the gap between innovative technology and practical business
-                  solutions, NerdCrater has grown from a small team of developers to a comprehensive IT solutions
-                  provider.
-                </p>
-                <p className="text-lg text-[#030E4F] mb-8">
-                  We believe that great software is not just about code – it's about understanding business needs,
-                  solving real problems, and creating experiences that users love.
-                </p>
-                <div className="space-y-6">
-                  <HoverAnimation type="lift">
-                    <Card className="bg-[#30396d] border-[#F49F1C]/20">
-                      <CardContent className="p-6">
-                        <div className="flex items-center gap-4 mb-3">
-                          <Target className="h-8 w-8 text-[#F49F1C]" />
-                          <h3 className="text-xl font-bold">Our Mission</h3>
-                        </div>
-                        <p className="text-gray-300">
-                          To empower businesses with cutting-edge technology solutions that solve complex problems and
-                          drive digital transformation.
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </HoverAnimation>
-                  <HoverAnimation type="lift">
-                    <Card className="bg-[#30396d] border-[#F49F1C]/20">
-                      <CardContent className="p-6">
-                        <div className="flex items-center gap-4 mb-3">
-                          <Eye className="h-8 w-8 text-[#F49F1C]" />
-                          <h3 className="text-xl font-bold">Our Vision</h3>
-                        </div>
-                        <p className="text-gray-300">
-                          To be the leading innovator in IT solutions, recognized globally for our expertise,
-                          reliability, and forward-thinking approach.
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </HoverAnimation>
-                </div>
+      
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+  <FadeIn direction="left">
+    <div className="flex flex-col justify-center">
+      <h2 className="text-4xl text-[#030E4F] font-bold mb-6">Our Story</h2>
+      <p className="text-xl mb-6 text-[#030E4F]">
+        Founded with a vision to bridge the gap between innovative technology and practical business
+        solutions, NerdCrater has grown from a small team of developers to a comprehensive IT solutions
+        provider.
+      </p>
+      <p className="text-lg text-[#030E4F] mb-8">
+        We believe that great software is not just about code – it's about understanding business needs,
+        solving real problems, and creating experiences that users love.
+      </p>
+      <div className="space-y-6">
+        <HoverAnimation type="lift">
+          <Card className="bg-[#30396d] border-[#F49F1C]/20">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-4 mb-3">
+                <Target className="h-8 w-8 text-[#F49F1C]" />
+                <h3 className="text-xl font-bold">Our Mission</h3>
               </div>
-            </FadeIn>
-            <FadeIn direction="right" delay={0.2}>
-              <div className="relative h-[500px] rounded-lg overflow-hidden">
-                <Image
-                  src="/about-us-section.jpg"
-                  alt="NerdCrater team"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#030E4F]/80 to-transparent"></div>
+              <p className="text-gray-300">
+                To empower businesses with cutting-edge technology solutions that solve complex problems and
+                drive digital transformation.
+              </p>
+            </CardContent>
+          </Card>
+        </HoverAnimation>
+        <HoverAnimation type="lift">
+          <Card className="bg-[#30396d] border-[#F49F1C]/20">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-4 mb-3">
+                <Eye className="h-8 w-8 text-[#F49F1C]" />
+                <h3 className="text-xl font-bold">Our Vision</h3>
               </div>
-            </FadeIn>
-          </section>
+              <p className="text-gray-300">
+                To be the leading innovator in IT solutions, recognized globally for our expertise,
+                reliability, and forward-thinking approach.
+              </p>
+            </CardContent>
+          </Card>
+        </HoverAnimation>
+      </div>
+    </div>
+  </FadeIn>
+
+  <FadeIn direction="right" delay={0.2}>
+    <div className="relative h-full rounded-lg overflow-hidden">
+      <Image
+        src="/about-us-section.jpg"
+        alt="NerdCrater team"
+        fill
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#030E4F]/80 to-transparent"></div>
+    </div>
+  </FadeIn>
+</section>
+
 
           {/* Values Section */}
           <section className="py-20">
@@ -183,15 +186,15 @@ export default function AboutPage() {
           </section>
 
           {/* Team Section */}
-          <section>
+          {/* <section>
             <FadeIn>
               <h2 className="text-3xl text-[#030E4F] font-bold mb-8 text-center">Meet Our Team</h2>
             </FadeIn>
             <TeamSection />
-          </section>
+          </section> */}
 
           {/* Careers CTA */}
-          <section className="bg-gradient-to-r bg-[#30396d] rounded-2xl p-8 text-center">
+          {/* <section className="bg-gradient-to-r bg-[#30396d] rounded-2xl p-8 text-center">
             <FadeIn>
               <Heart className="h-12 w-12 text-[#F49F1C] mx-auto mb-4" />
               <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
@@ -204,7 +207,7 @@ export default function AboutPage() {
                 </Button>
               </HoverAnimation>
             </FadeIn>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>

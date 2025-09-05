@@ -142,13 +142,14 @@ export default function ServicesPage() {
             ))}
           </div>
         </section> */}
-        
-        <section className="py-20 bg-[#30396d] rounded-2xl relative">
-  <div className="absolute left-4 md:left-1/2 h-full w-0.5 bg-[#F49F1C]/30 -translate-x-1/2"></div>
-
+     
+<section className="py-20 bg-[#30396d] rounded-2xl relative">
+  {/* Section header */}
   <div className="text-center mb-16">
     <FadeIn>
-      <Badge className="mb-4 bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold">Our Process</Badge>
+      <Badge className="mb-4 bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold">
+        Our Process
+      </Badge>
     </FadeIn>
     <FadeIn delay={0.1}>
       <h2 className="text-4xl font-bold mb-6">How We Work</h2>
@@ -160,54 +161,60 @@ export default function ServicesPage() {
     </FadeIn>
   </div>
 
-  <div className="space-y-12 relative z-10">
-    {[
-  {
-    year: "01",
-    title: "Discovery & Planning",
-    description:
-      "We begin by deeply understanding your business objectives, user personas, technical constraints, and competitive landscape. This forms the foundation for strategic planning and efficient resource allocation.",
-  },
-  {
-    year: "02",
-    title: "Design & Architecture",
-    description:
-      "Our design team creates user-focused UI/UX wireframes and prototypes while the architects define a scalable, secure, and maintainable technology stack tailored to your requirements.",
-  },
-  {
-    year: "03",
-    title: "Development & Testing",
-    description:
-      "Using agile sprints, we develop modular, reusable code with continuous integration. Every feature goes through rigorous unit, integration, and QA testing to ensure performance and stability.",
-  },
-  {
-    year: "04",
-    title: "Deployment & Launch",
-    description:
-      "After final validations, we deploy your application using CI/CD pipelines and cloud infrastructure, ensuring zero-downtime releases and full operational readiness.",
-  },
-  {
-    year: "05",
-    title: "Maintenance & Support",
-    description:
-      "Post-launch, we offer real-time monitoring, periodic updates, patching, and technical support to ensure smooth operations and adapt to user feedback or evolving needs.",
-  },
-  {
-    year: "06",
-    title: "Analytics & Optimization",
-    description:
-      "We integrate analytics tools to gather real user data and generate insights. This enables us to continuously refine features, enhance user experience, and drive ROI.",
-  },
-  {
-    year: "07",
-    title: "Scaling & Growth",
-    description:
-      "As your platform grows, we help scale infrastructure, optimize databases, and improve system architecture to handle increased load and expand your digital presence globally.",
-  },
-]
-.map((step, index) => (
-      <StepCard step={step} index={index} key={index} />
-    ))}
+  {/* Timeline wrapper */}
+  <div className="relative">
+    {/* Vertical line */}
+    <div className="absolute left-4 md:left-1/2 inset-y-0 w-0.5 bg-[#F49F1C]/30 -translate-x-1/2"></div>
+
+    {/* Steps */}
+    <div className="space-y-12 relative z-10">
+      {[
+        {
+          year: "01",
+          title: "Discovery & Planning",
+          description:
+            "We begin by deeply understanding your business objectives, user personas, technical constraints, and competitive landscape. This forms the foundation for strategic planning and efficient resource allocation.",
+        },
+        {
+          year: "02",
+          title: "Design & Architecture",
+          description:
+            "Our design team creates user-focused UI/UX wireframes and prototypes while the architects define a scalable, secure, and maintainable technology stack tailored to your requirements.",
+        },
+        {
+          year: "03",
+          title: "Development & Testing",
+          description:
+            "Using agile sprints, we develop modular, reusable code with continuous integration. Every feature goes through rigorous unit, integration, and QA testing to ensure performance and stability.",
+        },
+        {
+          year: "04",
+          title: "Deployment & Launch",
+          description:
+            "After final validations, we deploy your application using CI/CD pipelines and cloud infrastructure, ensuring zero-downtime releases and full operational readiness.",
+        },
+        {
+          year: "05",
+          title: "Maintenance & Support",
+          description:
+            "Post-launch, we offer real-time monitoring, periodic updates, patching, and technical support to ensure smooth operations and adapt to user feedback or evolving needs.",
+        },
+        {
+          year: "06",
+          title: "Analytics & Optimization",
+          description:
+            "We integrate analytics tools to gather real user data and generate insights. This enables us to continuously refine features, enhance user experience, and drive ROI.",
+        },
+        {
+          year: "07",
+          title: "Scaling & Growth",
+          description:
+            "As your platform grows, we help scale infrastructure, optimize databases, and improve system architecture to handle increased load and expand your digital presence globally.",
+        },
+      ].map((step, index) => (
+        <StepCard step={step} index={index} key={index} />
+      ))}
+    </div>
   </div>
 </section>
 

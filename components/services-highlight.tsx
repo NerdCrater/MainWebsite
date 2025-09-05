@@ -8,59 +8,11 @@ import { ArrowRight } from "lucide-react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import ParallaxSection from "@/components/parallax-section"
-import Card3D from "@/components/3d-card"
+// import Card3D from "@/components/3d-card"
 import GlowEffect from "@/components/glow-effect"
+import { services } from "@/lib/data"
 
-const services = [
-  {
-    title: "Web Development",
-    description: "Custom, responsive websites and web applications built with the latest technologies.",
-    icon: "/images/services/web-dev.png",
-    slug: "web-development",
-    color: "bg-blue-500/10",
-    iconColor: "text-blue-500",
-  },
-  {
-    title: "Mobile App Development",
-    description: "Native and cross-platform mobile applications for iOS and Android.",
-    icon: "/images/services/mobile-app.png",
-    slug: "mobile-app-development",
-    color: "bg-green-500/10",
-    iconColor: "text-green-500",
-  },
-  {
-    title: "UI/UX Design",
-    description: "User-centered design that enhances user experience and engagement.",
-    icon: "/images/services/ui-ux.png",
-    slug: "ui-ux-design",
-    color: "bg-purple-500/10",
-    iconColor: "text-purple-500",
-  },
-  {
-    title: "AI Solutions",
-    description: "Intelligent applications leveraging machine learning and AI.",
-    icon: "/images/services/ai.png",
-    slug: "ai-powered-applications",
-    color: "bg-red-500/10",
-    iconColor: "text-red-500",
-  },
-  {
-    title: "Cloud Services",
-    description: "Scalable cloud infrastructure and migration services.",
-    icon: "/images/services/cloud.png",
-    slug: "cloud-solutions",
-    color: "bg-cyan-500/10",
-    iconColor: "text-cyan-500",
-  },
-  {
-    title: "Voice Assistant",
-    description: "Custom voice applications and integrations for smart assistants.",
-    icon: "/images/services/voice.png",
-    slug: "voice-assistant-integration",
-    color: "bg-amber-500/10",
-    iconColor: "text-amber-500",
-  },
-]
+
 
 export default function ServicesHighlight() {
   const ref = useRef(null)
@@ -83,9 +35,9 @@ export default function ServicesHighlight() {
       </ParallaxSection>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => (
+        {services.map((service:any, index:any) => (
           <ParallaxSection key={service.slug} offset={[0, 0.5]} targetScale={1} targetOpacity={1} className="h-full">
-            <Card3D className="h-full">
+            <Card className="h-full">
               <GlowEffect className="h-full">
                 <Card className="h-full border-none shadow-md overflow-hidden bg-card/80 backdrop-blur-sm">
                   <CardHeader>
@@ -124,7 +76,7 @@ export default function ServicesHighlight() {
                   </CardContent>
                 </Card>
               </GlowEffect>
-            </Card3D>
+            </Card>
           </ParallaxSection>
         ))}
       </div>

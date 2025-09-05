@@ -174,7 +174,7 @@ export default function ContactPage() {
                 </Card>
               </HoverAnimation> */}
 
-              <div className="h-64 rounded-lg overflow-hidden mt-6">
+              <div className="h-64 rounded-lg overflow-hidden mt-6 relative z-0   ">
                 <MohaliMap />
                 <div className="w-full h-full bg-[#020B3F] border border-[#F49F1C]/20 rounded-lg flex items-center justify-center">
                   {/* <p className="text-gray-400">Google Maps Integration</p> */}
