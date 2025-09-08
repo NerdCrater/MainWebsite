@@ -1,5 +1,5 @@
 "use client"
-
+import * as React from "react";
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Image from "next/image"
@@ -27,9 +27,14 @@ import { useState } from "react"
 //   }
 // }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projects.find((project) => project.slug === params.slug)
+export default function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = React.use(params); // unwrap params Promise
 
+  const project = projects.find((project) => project.slug === slug);
   if (!project) {
     notFound()
   }
@@ -161,14 +166,14 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
   <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-white">
     📝 Project Overview
   </h2>
-  {
-    project?.overview?.map((overviewItem:any)=>(
+ {
+  project?.overview?.map((overviewItem: any, index: number) => (
+    <p key={index} className="text-white">
+      {overviewItem}
+    </p>
+  ))
+}
 
-  <p className="text-white">
-    {overviewItem}
-  </p>
-    ))
-  }
   {/* <p className="mt-2">
     The client, a mid-sized retailer with ambitious growth plans, needed a scalable platform that delivered a superior shopping experience. We built a custom platform using Next.js for the frontend and a Node.js microservices backend with MongoDB as the primary database.
   </p>
@@ -251,7 +256,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
               </Card>
             </div>
 
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
   <Button
     size="lg"
     className="gap-2 bg-[#F49F1C] text-white hover:bg-[#E8890B]"
@@ -259,7 +264,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState(0);
     <span>View Live Project</span>
     <ExternalLink className="h-4 w-4" />
   </Button>
-</div>
+</div> */}
 
           </div>
         </div>
