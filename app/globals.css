@@ -340,3 +340,8 @@
   margin-bottom: 1rem;
   line-height: 1.6;
 }
+
+[data-next-badge],
+[data-next-badge-root] {
+  display: none !important;
+}

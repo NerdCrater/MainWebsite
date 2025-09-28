@@ -1,11 +1,11 @@
 "use client";
-
+import Link from "next/link"
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-
+ import { Homeservices } from "@/lib/data"
   import { motion } from "framer-motion";
 
 
@@ -330,15 +330,18 @@ const TechGrid = ({ icons }: { icons: Record<string, any> }) => (
   {/* CTA Buttons */}
   <div className="flex flex-col sm:flex-row gap-4">
     <HoverAnimation type="scale">
+      <Link href="/portfolio">
       <Button
         size="lg"
         className="bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold"
       >
         {P1}
       </Button>
+      </Link>
     </HoverAnimation>
 
     <HoverAnimation type="scale">
+         <Link href="/contact">
       <Button
         size="lg"
         variant="outline"
@@ -346,6 +349,7 @@ const TechGrid = ({ icons }: { icons: Record<string, any> }) => (
       >
         {P3}
       </Button>
+         </Link>
     </HoverAnimation>
   </div>
 </div>
@@ -466,66 +470,33 @@ const yourNextProduct = transform({
             </FadeIn>
           </div>
 
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  {[
-    {
-      icon: <Globe className="h-10 w-10 text-[#F49F1C]" />,
-      title: "Web Development",
-      description:
-        "Modern, responsive web applications built with React, Next.js, and other cutting-edge frameworks.",
-    },
-    {
-      icon: <Terminal className="h-10 w-10 text-[#F49F1C]" />,
-      title: "Backend Development",
-      description:
-        "Scalable APIs and microservices built with Node.js, Python, and Go.",
-    },
-    {
-      icon: <Code className="h-10 w-10 text-[#F49F1C]" />,
-      title: "Frontend Architecture",
-      description:
-        "Clean, maintainable frontend codebases with modern state management and performance optimization.",
-    },
-    {
-      icon: <Database className="h-10 w-10 text-[#F49F1C]" />,
-      title: "Database Design",
-      description:
-        "Efficient database schemas and query optimization for SQL and NoSQL databases.",
-    },
-    {
-      icon: <Server className="h-10 w-10 text-[#F49F1C]" />,
-      title: "DevOps & CI/CD",
-      description:
-        "Automated testing, deployment pipelines, and infrastructure as code.",
-    },
-    {
-      icon: <FileCode className="h-10 w-10 text-[#F49F1C]" />,
-      title: "Code Auditing",
-      description:
-        "Code reviews, performance optimization, and technical debt reduction.",
-    },
-  ].map((service, index) => (
+
+<StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {Homeservices.map((service, index) => (
     <HoverAnimation key={index} type="lift">
       <Card className="bg-[#30396d] border-[#F49F1C]/20 hover:border-[#F49F1C]/50 transition-all duration-300 ">
         <CardContent className="p-6 flex flex-col justify-between h-full min-h-[360px]">
           <div>
-            <div className="mb-4">{service.icon}</div>
-            <h3 className="text-xl font-bold mb-2 text-white">
-              {service.title}
-            </h3>
+            {/* <div className="mb-4">{service.icon}</div> */}
+            <h3 className="text-xl font-bold mb-2 text-white">{service.title}</h3>
             <p className="text-gray-300">{service.description}</p>
           </div>
-          <Button
-            variant="link"
-            className="text-[#F49F1C] p-0 mt-4 flex items-center"
-          >
-            Learn more <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+
+          <Link href={`/homeservices/${service.slug}`}>
+            <Button
+              variant="link"
+              className="text-[#F49F1C] p-0 mt-4 flex items-center"
+            >
+              Learn more <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </CardContent>
       </Card>
     </HoverAnimation>
   ))}
 </StaggerContainer>
+
+
 
         </div>
       </section>
@@ -609,7 +580,7 @@ const yourNextProduct = transform({
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20  bg-[#d6d7dc]">
+      {/* <section className="py-20  bg-[#d6d7dc]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <FadeIn>
@@ -711,10 +682,10 @@ const yourNextProduct = transform({
             </FadeIn>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-[#d6d7dc] ">
+      {/* <section className="py-20 bg-[#d6d7dc] ">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <FadeIn>
@@ -779,7 +750,7 @@ const yourNextProduct = transform({
             ))}
           </StaggerContainer>
         </div>
-      </section>
+      </section> */}
 
       {/* Client Logos Section */}
       {/* <section className="py-16 bg-[#030E4F]">
@@ -796,7 +767,7 @@ const yourNextProduct = transform({
       </section> */}
 
       {/* CTA Section */}
-      <section 
+      {/* <section 
       // className="py-20 bg-gradient-to-r from-[#030E4F] via-[#1E3A8A] to-[#F49F1C]/20"
       className="py-20 bg-[#d6d7dc]"
       >
@@ -832,7 +803,7 @@ const yourNextProduct = transform({
             </div>
           </FadeIn>
         </div>
-      </section>
+      </section> */}
 
       {/* Newsletter Section */}
       {/* <NewsletterCTA /> */}

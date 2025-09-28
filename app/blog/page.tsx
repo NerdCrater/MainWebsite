@@ -92,7 +92,7 @@ export default function BlogPage() {
         </section>
 
         {/* Newsletter CTA */}
-        <section className="py-20 bg-gradient-to-r from-[#030E4F] via-[#1E3A8A] to-[#F49F1C]/20 rounded-2xl text-center">
+        {/* <section className="py-20 bg-gradient-to-r from-[#030E4F] via-[#1E3A8A] to-[#F49F1C]/20 rounded-2xl text-center">
           <FadeIn>
             <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
@@ -108,7 +108,7 @@ export default function BlogPage() {
               </HoverAnimation>
             </div>
           </FadeIn>
-        </section>
+        </section> */}
       </div>
     </div>
   )

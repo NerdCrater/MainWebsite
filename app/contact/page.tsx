@@ -75,7 +75,7 @@ export default function ContactPage() {
                 >
                   <Button
                     variant="outline"
-                    className="border-[#F49F1C] text-[#F49F1C] hover:bg-[#F49F1C]/10"
+                    className="bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold"
                   >
                     Book Meeting
                   </Button>
@@ -95,9 +95,9 @@ export default function ContactPage() {
                   <Button
                     asChild
                     variant="outline"
-                    className="border-[#F49F1C] text-[#F49F1C] hover:bg-[#F49F1C]/10"
+                    className="bg-[#F49F1C] hover:bg-[#E8890B] text-[#030E4F] font-semibold"
                   >
-                    <span>+91 (9871)-627-742</span>
+                    <span>+91 (98XX)-XXX-XXX</span>
                   </Button>
                 </a>
               </Card>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                       <h3 className="font-bold text-lg mb-2 text-white">
                         Phone
                       </h3>
-                      <p className="text-gray-300">+91 9871627742</p>
+                      <p className="text-gray-300">+91 98XXXXXXXX</p>
                       <p className="text-gray-300">Mon-Fri, 9am-10pm IST</p>
                     </div>
                   </div>

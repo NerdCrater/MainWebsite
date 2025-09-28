@@ -20,7 +20,7 @@ export default function PortfolioPage() {
   ]
 const router =useRouter()
   return (
-    <div className="min-h-screen bg-[#030E4F] text-white">
+    <div className="min-h-screen bg-[#d6d7dc] text-white">
       <div className="container mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="text-center py-20">
@@ -29,11 +29,11 @@ const router =useRouter()
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Our <span className="text-[#F49F1C]">Success Stories</span>
+         <span className="text-[#030E4F]">     Our</span> <span className="text-[#F49F1C]">Success Stories</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-300 max-w-3xl mx-auto text-[#030E4F]">
               Explore our successful projects and see how we've helped businesses achieve their goals through innovative
               technology solutions.
             </p>
@@ -173,7 +173,7 @@ const router =useRouter()
         {/* CTA Section */}
         <section className="py-20 text-center">
           <FadeIn>
-            <h2 className="text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <h2 className="text-4xl font-bold mb-6 text-[#030E4F]">Ready to Start Your Project?</h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Let's create something amazing together. Contact us to discuss your next project.
             </p>
@@ -191,8 +191,3 @@ const router =useRouter()
   )
 }
 
-// export default function PortfolioPage() {
-// return (
-//   <></>
-// )
-// }

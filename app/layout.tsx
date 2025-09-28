@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "./globals.css"
+ import "./globals.css"
 import { ThemeProvider as NextThemesProvider } from "@/components/theme-provider"
 import { ThemeProvider } from "@/context/theme-context"
 import Navbar from "@/components/navbar"
@@ -37,7 +37,7 @@ export default function RootLayout({
               <Footer />
             </div>
           </ThemeProvider>
-        </NextThemesProvider>
+        </NextThemesProvider>/
       </body>
     </html>
   )

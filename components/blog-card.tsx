@@ -35,10 +35,15 @@ export default function BlogCard({ title, date, category, excerpt, image, slug }
       </CardContent>
       <CardFooter className="px-6 pb-6 pt-0">
         <Link href={`/blog/${slug}`} passHref className="w-full">
-          <Button variant="outline" className="w-full group/button">
-            <span>Read Article</span>
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/button:translate-x-1" />
-          </Button>
+       <Button
+ 
+  className="w-full bg-[#F49F1C]/90 hover:bg-[#F49F1C]/90"
+>
+  <span>Read Article</span>
+  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/button:translate-x-1" />
+</Button>
+
+
         </Link>
       </CardFooter>
     </Card>
