@@ -7,18 +7,17 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
  import { Homeservices } from "@/lib/data"
   import { motion } from "framer-motion";
-
+import { Globe, Server, Palette, Database, Rocket, Search, Code } from "lucide-react"
 
 import ClientLogos from "@/components/client-logos";
 import NewsletterCTA from "@/components/newsletter-cta";
 import {
   ArrowRight,
-  Code,
-  Database,
+
   FileCode,
   Github,
-  Globe,
-  Server,
+
+
   Terminal,
 } from "lucide-react";
 import {
@@ -91,6 +90,17 @@ const devopsIcons: any = {
   Terraform: SiTerraform,
   Prometheus: SiPrometheus,
 };
+
+
+
+const serviceIcons: Record<string, React.ElementType> = {
+  "web-development": Globe,
+  "backend-development": Server,
+  "frontend-architecture": Palette,
+  "database-design": Database,
+  "devops-ci-cd": Rocket,
+  "code-auditing": Search,
+}
 
 // Code Block Component
 
@@ -463,7 +473,7 @@ const yourNextProduct = transform({
               </h2>
             </FadeIn>
             <FadeIn delay={0.2}>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="text-xl text-[#030E4F] max-w-3xl mx-auto">
                 We deliver robust, scalable solutions using cutting-edge
                 technologies and best practices.
               </p>
@@ -471,15 +481,16 @@ const yourNextProduct = transform({
           </div>
 
 
-<StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+{/* <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   {Homeservices.map((service, index) => (
     <HoverAnimation key={index} type="lift">
       <Card className="bg-[#30396d] border-[#F49F1C]/20 hover:border-[#F49F1C]/50 transition-all duration-300 ">
         <CardContent className="p-6 flex flex-col justify-between h-full min-h-[360px]">
           <div>
-            {/* <div className="mb-4">{service.icon}</div> */}
+            <div className="mb-4 text-[#F49F1C] text-6xl">{service.icon}</div>
             <h3 className="text-xl font-bold mb-2 text-white">{service.title}</h3>
-            <p className="text-gray-300">{service.description}</p>
+            <p className="text-gray-300 font-bold 
+            ">{service.shortDesc}</p>
           </div>
 
           <Link href={`/homeservices/${service.slug}`}>
@@ -494,8 +505,39 @@ const yourNextProduct = transform({
       </Card>
     </HoverAnimation>
   ))}
-</StaggerContainer>
+</StaggerContainer> */}
 
+<StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {Homeservices.map((service, index) => {
+    const IconComponent = serviceIcons[service.slug] || Code
+    return (
+      <HoverAnimation key={index} type="lift">
+        <Card className="bg-[#30396d] border-[#F49F1C]/20 hover:border-[#F49F1C]/50 transition-all duration-300">
+          <CardContent className="p-6 flex flex-col justify-between h-full min-h-[360px]">
+            <div>
+              {/* Icon style like services */}
+              <div className="w-14 h-14 rounded-full bg-[#F49F1C]/10 flex items-center justify-center mb-4">
+                <IconComponent className="h-8 w-8 text-[#F49F1C]" />
+              </div>
+
+              <h3 className="text-xl font-bold mb-2 text-white">{service.title}</h3>
+              <p className="text-gray-300 font-bold">{service.shortDesc}</p>
+            </div>
+
+            <Link href={`/homeservices/${service.slug}`}>
+              <Button
+                variant="link"
+                className="text-[#F49F1C] p-0 mt-4 flex items-center"
+              >
+                Learn more <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+      </HoverAnimation>
+    )
+  })}
+</StaggerContainer>
 
 
         </div>

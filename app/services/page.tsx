@@ -9,7 +9,7 @@ import { FadeIn, HoverAnimation, StaggerContainer } from "@/components/animation
 import { StepCard } from "@/components/StepCard"
 import { useRouter } from "next/navigation"
 
-const serviceIcons = {
+const serviceIcons: Record<string, React.ElementType> = {
   "web-development": Code,
   "mobile-app-development": Smartphone,
   "ui-ux-design": Palette,

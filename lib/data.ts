@@ -955,119 +955,56 @@ Built with scalability and interoperability in mind, our hospital systems are tr
 export type HomeService = {
   title: string;
   slug: string;
+  shortDesc : string;
   description: string;
+  icon : any;
 };
 
 export const Homeservices: HomeService[] = [
   {
     title: "Web Development",
     slug: "web-development",
-    description: `
-Our web development services focus on building websites and applications that combine performance, aesthetics, and usability. 
-We leverage frameworks like React and Next.js to deliver fast-loading, SEO-friendly websites that work seamlessly across devices.
-
-We believe that your website should not just be a digital presence but a powerful tool for business growth. 
-That’s why we carefully design user interfaces, ensure mobile responsiveness, and implement features that enhance engagement.
-
-Beyond visuals, we pay close attention to performance optimization, accessibility, and compliance with web standards. 
-Our goal is to make your website easy to use, secure, and capable of supporting your business goals.
-
-From simple landing pages to enterprise-grade applications, we handle the entire development lifecycle — planning, design, coding, testing, and deployment. 
-We also offer ongoing support to keep your website updated and future-proof.
-    `,
+    icon: "🌐",
+    shortDesc: "Fast, responsive, and SEO-friendly websites using React & Next.js. We craft scalable digital solutions tailored for growth.",
+    description: `Our web development services focus on building websites and applications that combine performance, aesthetics, and usability. We leverage frameworks like React and Next.js to deliver fast-loading, SEO-friendly websites that work seamlessly across devices. We believe that your website should not just be a digital presence but a powerful tool for business growth. That’s why we carefully design user interfaces, ensure mobile responsiveness, and implement features that enhance engagement. Beyond visuals, we pay close attention to performance optimization, accessibility, and compliance with web standards. Our goal is to make your website easy to use, secure, and capable of supporting your business goals. From simple landing pages to enterprise-grade applications, we handle the entire development lifecycle — planning, design, coding, testing, and deployment. We also offer ongoing support to keep your website updated and future-proof.`,
   },
   {
     title: "Backend Development",
     slug: "backend-development",
-    description: `
-A strong backend is the engine that powers any digital product. 
-Our backend development services are focused on building reliable, secure, and scalable systems that can handle everything from small apps to enterprise workloads.
-
-We use Node.js, Python, and Go to build APIs and microservices that ensure smooth data flow between your frontend, databases, and third-party integrations. 
-Our team designs architectures that are modular, maintainable, and optimized for performance.
-
-Security is at the core of what we do. 
-We implement robust authentication, authorization, and data protection measures, so you can confidently serve users without worrying about breaches.
-
-Scalability is another priority — whether you’re expecting a hundred users or a million, our backend systems are designed to grow with your needs. 
-By combining cloud-native solutions with efficient database management, we ensure your application stays fast and reliable under pressure.
-    `,
+    icon: "⚙️",
+    shortDesc: "Secure, scalable, and reliable APIs & microservices. Powering your apps with high-performance server-side solutions.",
+    description: `A strong backend is the engine that powers any digital product. Our backend development services are focused on building reliable, secure, and scalable systems that can handle everything from small apps to enterprise workloads. We use Node.js, Python, and Go to build APIs and microservices that ensure smooth data flow between your frontend, databases, and third-party integrations. Our team designs architectures that are modular, maintainable, and optimized for performance. Security is at the core of what we do. We implement robust authentication, authorization, and data protection measures, so you can confidently serve users without worrying about breaches. Scalability is another priority — whether you’re expecting a hundred users or a million, our backend systems are designed to grow with your needs. By combining cloud-native solutions with efficient database management, we ensure your application stays fast and reliable under pressure.`,
   },
   {
     title: "Frontend Architecture",
     slug: "frontend-architecture",
-    description: `
-The frontend is where your users interact with your product, and first impressions matter. 
-Our frontend architecture services ensure that your application is not only visually appealing but also fast, reliable, and intuitive.
-
-We design scalable component-based architectures using React, Next.js, and modern state management tools. 
-This approach allows for better maintainability, reusability, and faster development cycles.
-
-Performance optimization is a key focus. 
-We reduce load times, improve rendering efficiency, and make sure your application performs well even on low-bandwidth networks or older devices.
-
-Accessibility is equally important — our team ensures that your application is usable by everyone, including those with disabilities, by adhering to WCAG standards.
-
-By combining design systems, reusable components, and clean architecture, we create frontends that are beautiful, functional, and built to last.
-    `,
+    icon: "🎨",
+    shortDesc: "Scalable, performant, and accessible user interfaces. We build engaging UIs with React, Next.js, and modern frameworks.",
+    description: `The frontend is where your users interact with your product, and first impressions matter. Our frontend architecture services ensure that your application is not only visually appealing but also fast, reliable, and intuitive. We design scalable component-based architectures using React, Next.js, and modern state management tools. This approach allows for better maintainability, reusability, and faster development cycles. Performance optimization is a key focus. We reduce load times, improve rendering efficiency, and make sure your application performs well even on low-bandwidth networks or older devices. Accessibility is equally important — our team ensures that your application is usable by everyone, including those with disabilities, by adhering to WCAG standards. By combining design systems, reusable components, and clean architecture, we create frontends that are beautiful, functional, and built to last.`,
   },
   {
     title: "Database Design",
     slug: "database-design",
-    description: `
-Every successful application depends on an efficient and reliable database. 
-We provide expert database design services that optimize how data is stored, retrieved, and managed.
-
-Our approach begins with understanding your business needs — whether you require SQL for structured data or NoSQL for flexibility, we design schemas that fit perfectly. 
-We focus on indexing, relationships, and normalization to ensure your queries are fast and efficient.
-
-Scalability is built into every design. 
-We prepare your database to handle future growth without slowing down, whether that’s managing millions of rows of data or supporting complex analytics.
-
-We also implement best practices for security, backup, and disaster recovery, so your data remains safe and accessible. 
-Our team can migrate existing databases, optimize queries, and reduce costs by ensuring resources are used efficiently.
-
-With a well-designed database, your application becomes more reliable, faster, and easier to scale as your business grows.
-    `,
+    icon: "🗄️",
+    shortDesc: "Efficient, secure, and scalable database solutions. From schema design to query optimization, we make your data work smarter.",
+    description: `Every successful application depends on an efficient and reliable database. We provide expert database design services that optimize how data is stored, retrieved, and managed. Our approach begins with understanding your business needs — whether you require SQL for structured data or NoSQL for flexibility, we design schemas that fit perfectly. We focus on indexing, relationships, and normalization to ensure your queries are fast and efficient. Scalability is built into every design. We prepare your database to handle future growth without slowing down, whether that’s managing millions of rows of data or supporting complex analytics. We also implement best practices for security, backup, and disaster recovery, so your data remains safe and accessible. Our team can migrate existing databases, optimize queries, and reduce costs by ensuring resources are used efficiently. With a well-designed database, your application becomes more reliable, faster, and easier to scale as your business grows.`,
   },
   {
     title: "DevOps & CI/CD",
     slug: "devops-ci-cd",
-    description: `
-Modern businesses can’t afford downtime or slow releases. 
-Our DevOps and CI/CD services ensure that your software moves from development to production quickly, securely, and without interruptions.
-
-We set up automated pipelines that handle building, testing, and deploying your code. 
-This eliminates manual errors and speeds up the release process, allowing your team to focus on innovation.
-
-Infrastructure is managed as code, meaning everything is reproducible and scalable. 
-We use tools like Docker and Kubernetes to containerize applications, ensuring consistency across environments.
-
-Monitoring and logging are built into our process. 
-You’ll always have visibility into system performance, making it easier to troubleshoot issues before they impact users.
-
-By adopting DevOps best practices, your business gains agility, reduces risk, and ensures that your software is always production-ready.
-    `,
+    icon: "🚀",
+    shortDesc: "Automated, secure, and efficient pipelines for faster delivery. Ensuring smooth deployments with Docker, Kubernetes, and cloud tools.",
+    description: `Modern businesses can’t afford downtime or slow releases. Our DevOps and CI/CD services ensure that your software moves from development to production quickly, securely, and without interruptions. We set up automated pipelines that handle building, testing, and deploying your code. This eliminates manual errors and speeds up the release process, allowing your team to focus on innovation. Infrastructure is managed as code, meaning everything is reproducible and scalable. We use tools like Docker and Kubernetes to containerize applications, ensuring consistency across environments. Monitoring and logging are built into our process. You’ll always have visibility into system performance, making it easier to troubleshoot issues before they impact users. By adopting DevOps best practices, your business gains agility, reduces risk, and ensures that your software is always production-ready.`,
   },
   {
     title: "Code Auditing",
     slug: "code-auditing",
-    description: `
-Code quality has a direct impact on your product’s success. 
-Our code auditing services provide an in-depth review of your existing codebase, identifying strengths, weaknesses, and areas for improvement.
-
-We check for security vulnerabilities, performance bottlenecks, and compliance with coding standards. 
-Our audits cover everything from frontend structure to backend logic and database queries.
-
-After the audit, we provide a detailed report with actionable recommendations. 
-This can include refactoring suggestions, performance optimizations, or improved architecture patterns.
-
-Our goal is not only to find issues but to help your team adopt best practices. 
-By improving code quality, you reduce technical debt, lower long-term maintenance costs, and make your system easier to scale.
-
-Regular code audits are like health checkups for your software — they keep your system strong, secure, and ready for future growth.
-    `,
+    icon: "🔍",
+    shortDesc: "Improve security, performance, and maintainability of your codebase. Gain actionable insights with our detailed audit reports.",
+    description: `Code quality has a direct impact on your product’s success. Our code auditing services provide an in-depth review of your existing codebase, identifying strengths, weaknesses, and areas for improvement. We check for security vulnerabilities, performance bottlenecks, and compliance with coding standards. Our audits cover everything from frontend structure to backend logic and database queries. After the audit, we provide a detailed report with actionable recommendations. This can include refactoring suggestions, performance optimizations, or improved architecture patterns. Our goal is not only to find issues but to help your team adopt best practices. By improving code quality, you reduce technical debt, lower long-term maintenance costs, and make your system easier to scale. Regular code audits are like health checkups for your software — they keep your system strong, secure, and ready for future growth.`,
   },
 ];
+
+
 
 
