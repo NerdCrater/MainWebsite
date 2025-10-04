@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",  // Required for static hosting
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -7,7 +8,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // because Hostinger doesn't support Next.js image optimizer
   },
 }
 
