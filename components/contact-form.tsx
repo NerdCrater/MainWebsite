@@ -48,7 +48,7 @@ export default function ContactForm() {
     })
 
     const result = await response.json()
-
+console.log("....result...",result)
     if (result.success) {
       toast({
         title: "Message sent!",

@@ -48,17 +48,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
           {/* Hero Section */}
           <div className="relative h-[400px] w-full">
-            <Image
-              src={"/placeholder.svg"}
-              alt={service.title}
-              fill
-              className="object-contain"
-            />
+              <Image src={service.images ?? "/placeholder.svg"} alt={service.title} fill className="object-contain" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-              {/* <div className="p-8 text-white">
-                <h1 className="text-4xl font-bold mb-4">{service.title}</h1>
-                <p className="text-xl max-w-2xl">{service.description}</p>
-              </div> */}
+              <div className="p-8 text-white">
+               <div className="text-5xl mb-6">{service.icon}</div>
+                      <h1 className="text-3xl font-bold mb-4">{service.title}</h1>
+                      <p className="text-xl max-w-2xl">{service.shortDesc}</p>
+              </div>
             </div>
           </div>
 

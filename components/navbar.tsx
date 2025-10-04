@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4 text-sm">
           <div className="flex items-center gap-2 text-[#030E4F]">
             <PhoneCallIcon className="h-4 w-4 text-[#F49F1C]" />
-            <span>+91-98XXXXXXXX</span>
+            <span>+91-9671626662</span>
           </div>  
           <div className="flex items-center gap-2 text-[#030E4F]">
             <MailIcon className="h-4 w-4 text-[#F49F1C]" />

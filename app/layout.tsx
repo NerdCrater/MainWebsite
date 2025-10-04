@@ -1,35 +1,51 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
- import "./globals.css"
-import { ThemeProvider as NextThemesProvider } from "@/components/theme-provider"
-import { ThemeProvider } from "@/context/theme-context"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import Head from "next/head"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider as NextThemesProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/context/theme-context";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NerdCrater - IT Solutions Agency | Web, App & AI Development",
   description:
     "NerdCrater is a cutting-edge IT solutions company offering web development, app development, AI integration, and design services. Let's build the future together.",
   generator: "v0.dev",
-}
+    icons: {
+    icon: "/favicon.png", // your favicon path
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.png" type="image/png" />
 
-<Head>
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-</Head>
+        {/* Calendly Script */}
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          async
+        ></script>
+      </Head>
       <body className={inter.className}>
-        <NextThemesProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <NextThemesProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
           <ThemeProvider>
             <div className="flex min-h-screen flex-col">
               <Navbar />
@@ -37,8 +53,8 @@ export default function RootLayout({
               <Footer />
             </div>
           </ThemeProvider>
-        </NextThemesProvider>/
+        </NextThemesProvider>
       </body>
     </html>
-  )
+  );
 }
